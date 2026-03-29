@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOWBLUE - Rules & Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        meow: {
+                            bg: '#F0F8FF',
+                            primary: '#4A90E2',
+                            accent: '#B3D9FF',
+                            textDark: '#2C3E50',
+                            textMuted: '#5D6D7E',
+                            glass: 'rgba(255, 255, 255, 0.7)',
+                            warning: '#FF6B6B'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 8px 30px rgba(0, 0, 0, 0.04)',
+                        'blue-glow': '0 0 20px rgba(74, 144, 226, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F0F8FF;
+            color: #2C3E50;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        /* ลบ Scrollbar */
+        ::-webkit-scrollbar { width: 0px; }
+    </style>
+</head>
+<body class="antialiased font-sans flex justify-center p-0 sm:p-4">
+
+    <main class="w-full max-w-[480px] min-h-screen relative bg-white/40 shadow-2xl sm:rounded-[35px] overflow-hidden border border-white/50 pb-12">
+        
+        <div class="w-full overflow-hidden">
+            <img src="ไม่มีชื่อ 1040_20260329181709.png" alt="MEOWBLUE Banner" class="w-full h-auto object-cover">
+        </div>
+
+        <header class="px-6 py-8 text-center">
+            <h1 class="text-3xl font-bold text-meow-primary mb-2 tracking-tight">MEOWBLUE</h1>
+            <p class="text-[15px] text-meow-textDark leading-relaxed px-4">
+                ยินดีต้อนรับสู่ร้าน MEOWBLUE ค้าบ <br> 
+                สนใจบริการไหนสามารถสอบถามโดยการ DM ได้เลยน้า 💙
+            </p>
+            <p class="text-xs text-meow-textMuted mt-3 italic">รบกวนอ่านป้ายนี้ก่อนตัดสินใจสั่งซื้อด้วยนะคะ</p>
+        </header>
+
+        <div class="px-6 mb-8">
+            <a href="https://docs.google.com/spreadsheets/d/1okyxGAIVsUmdGXqoGklUjzL4qF03zT7O8Us_cXs4WV0/edit?usp=drivesdk" 
+               target="_blank" 
+               class="flex items-center justify-between bg-meow-primary text-white p-4 rounded-2xl shadow-blue-glow hover:scale-[1.02] transition-transform duration-300">
+                <span class="font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-list-check"></i> ตรวจสอบคิว & อัปเดตสินค้า
+                </span>
+                <i class="fa-solid fa-chevron-right text-sm opacity-80"></i>
+            </a>
+        </div>
+
+        <div class="px-5 space-y-4">
+            
+            <div class="glass-card p-5 rounded-[25px] shadow-soft">
+                <h3 class="font-semibold text-meow-primary mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-sm"></i> การสั่งสินค้า
+                </h3>
+                <ul class="text-sm space-y-2 text-meow-textDark opacity-90">
+                    <li class="flex gap-2"><span>1.</span> ทักเช็คสถานะสินค้าที่สนใจ</li>
+                    <li class="flex gap-2"><span>2.</span> แจ้งยอดรวม (EMS +50 / ลทบ +30)</li>
+                    <li class="flex gap-2"><span>3.</span> โอนเงินและแจ้งที่อยู่ภายใน 1-3 วัน</li>
+                    <li class="flex gap-2"><span>4.</span> รอรับเลขแทร็คพัสดุผ่านแชทส่วนตัว</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-5 rounded-[25px] shadow-soft">
+                <h3 class="font-semibold text-meow-primary mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check text-sm"></i> การจองสินค้า
+                </h3>
+                <p class="text-sm text-meow-textDark leading-relaxed">
+                    ต้องโอนตามกำหนดที่ตกลงกันไว้ สำหรับสินค้า Pre-order 
+                    <span class="text-meow-primary font-medium">ต้องโอนยอดที่เหลือภายใน 3 วัน</span> 
+                    หลังสินค้าถึงไทย (หากเลยกำหนด = หลุดจองทันที)
+                </p>
+            </div>
+
+            <div class="glass-card p-5 rounded-[25px] shadow-soft border-l-4 border-meow-primary">
+                <h3 class="font-semibold text-meow-primary mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-video text-sm"></i> การเคลมสินค้า
+                </h3>
+                <p class="text-sm text-meow-textDark leading-relaxed">
+                    **สำคัญมาก** ต้องมีวิดีโอแกะพัสดุแบบไม่ตัดต่อ เห็นหน้ากล่องชัดเจน 
+                    รับเคลมกรณีขนส่งไทยทำเสียหาย/ชำรุด 
+                    <span class="text-meow-textMuted">(ไม่รับเคลมกรณีตำหนิโรงงานหรือหลุด QC)</span>
+                </p>
+            </div>
+
+            <div class="glass-card p-5 rounded-[25px] shadow-soft bg-blue-50/30">
+                <h3 class="font-semibold text-meow-primary mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-wallet text-sm"></i> รายละเอียดมัดจำ
+                </h3>
+                <div class="grid grid-cols-1 gap-2 text-sm">
+                    <div class="flex justify-between border-b border-blue-100 pb-2">
+                        <span>ยอด 200 - 900 .-</span>
+                        <span class="font-bold">มัดจำ 70%</span>
+                    </div>
+                    <div class="flex justify-between border-b border-blue-100 pb-2">
+                        <span>ยอด 1K - 3K .-</span>
+                        <span class="font-bold">มัดจำ 50%</span>
+                    </div>
+                    <div class="flex justify-between border-b border-blue-100 pb-2">
+                        <span>ยอด 3K ขึ้นไป</span>
+                        <span class="font-bold">มัดจำ 20%</span>
+                    </div>
+                </div>
+                <p class="text-[12px] text-meow-primary mt-3 text-center">* สามารถเปลี่ยนเป็นผ่อนได้ กรณีโอนยอดเดียวไม่ไหว *</p>
+            </div>
+        </div>
+
+        <div class="mt-8 px-6 text-center">
+            <p class="text-meow-warning font-bold text-lg mb-6">
+                ยกเลิก / เลยระยะเวลา = ไม่คืนเงินทุกกรณี
+            </p>
+            
+            <div class="mt-4 pt-6 border-t border-blue-100">
+                <p class="text-xs text-meow-textMuted mb-4">ตรวจสอบรายละเอียดฉบับเต็มได้จากป้ายด้านล่าง</p>
+                <img src="ไม่มีชื่อ 388_20260329180800.png" alt="Full Rules" class="w-full rounded-2xl shadow-lg border border-white">
+            </div>
+        </div>
+
+        <footer class="mt-10 text-center text-meow-textMuted text-[13px]">
+            © 2026 MEOWBLUE - All rights reserved
+        </footer>
+
+    </main>
+
+</body>
+</html>
